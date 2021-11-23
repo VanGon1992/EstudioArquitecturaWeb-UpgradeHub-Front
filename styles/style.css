@@ -1,0 +1,270 @@
+@charset "UTF-8";
+/*General*/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/*Paginas Importadas*/
+/*Variables*/
+/*Fonts*/
+@font-face {
+  font-family: 'Josefine';
+  src: url(../fonts/JosefineSans/JosefinSans-VariableFont_wght.ttf);
+}
+
+#webGrid {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 7rem 30rem auto auto;
+      grid-template-rows: 7rem 30rem auto auto;
+}
+
+#webGrid #logo {
+  background-color: #ff5f02;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+}
+
+#webGrid #logo img {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 3rem;
+  margin-bottom: 0.8rem;
+}
+
+#webGrid #logo p {
+  font-family: 'Josefine';
+  font-weight: 800;
+  text-transform: uppercase;
+  color: white;
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+#webGrid #cabecera {
+  background-image: url(../img/casaDiseñoFondo.jpg);
+  background-position: center center;
+  background-size: cover;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1 / 6;
+}
+
+#webGrid #cabecera h1 {
+  font-family: 'Josefine';
+  font-weight: 400;
+  font-size: 3rem;
+  padding: 2.5rem;
+  margin-top: 20rem;
+  background-color: rgba(2, 2, 2, 0.521);
+  color: white;
+  position: absolute;
+}
+
+#webGrid #menuNav {
+  background-color: #ff5f02;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-column: 3 / 6;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+}
+
+#webGrid #menuNav a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Josefine';
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+#webGrid #menuNav a:hover {
+  color: lightseagreen;
+}
+
+#webGrid #galeria {
+  background-color: #f0f0f0;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / 5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+
+#webGrid #galeria .proyecto {
+  background-color: #ff5f02;
+  color: white;
+}
+
+#webGrid #galeria .proyecto img {
+  width: 100%;
+}
+
+#webGrid #galeria .proyecto h2 {
+  font-family: 'Josefine';
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: left;
+}
+
+#webGrid #galeria .proyecto p {
+  font-family: 'Josefine';
+  font-size: 1rem;
+  text-align: justify;
+  padding: 1rem;
+}
+
+#webGrid #barraLateral {
+  background-color: lightseagreen;
+  color: white;
+  font-family: 'Josefine';
+  text-align: justify;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-column: 5 / 6;
+  padding: 2rem;
+}
+
+#webGrid #barraLateral img {
+  width: 100%;
+}
+
+#webGrid #barraLateral h2 {
+  text-align: left;
+}
+
+#webGrid #barraLateral p {
+  margin-bottom: 2rem;
+}
+
+#webGrid #barraLateral button {
+  background-color: #ff5f02;
+  padding: 0.8rem;
+  font-family: 'Josefine';
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  margin-bottom: 4rem;
+  cursor: pointer;
+}
+
+#webGrid #barraLateral button:hover {
+  background-color: #ffa632;
+}
+
+#webGrid #footer {
+  background-color: #ff5f02;
+  font-family: 'Josefine';
+  color: white;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1 / 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#webGrid #footer h2 {
+  margin-top: 5rem;
+}
+
+#webGrid #footer .iconos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 6rem;
+}
+
+#webGrid #footer .iconos img {
+  width: 1.5rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+#webGrid #footer #datosContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  margin-left: 6rem;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+#webGrid #footer #contacto {
+  width: 40%;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+#webGrid #footer #empresa {
+  text-align: left;
+  margin-left: 5rem;
+}
+
+#webGrid #footer #copyright {
+  width: 30%;
+  margin-bottom: 3rem;
+}
+/*# sourceMappingURL=style.css.map */
